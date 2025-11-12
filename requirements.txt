@@ -1,0 +1,13 @@
+# --- Core Framework ---
+fastapi
+uvicorn[standard]
+
+# --- Messaging & Network ---
+aio-pika        # For async RabbitMQ communication
+httpx           # For async calls to User/Template services
+
+# --- Data & Utilities ---
+redis           # For the idempotency cache (async support)
+jinja2          # For rendering HTML email templates
+pydantic-settings # For loading env variables (replaces python-dotenv)
+python-json-logger
